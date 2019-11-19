@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="myScript.js"></script>
+</head>
+	<body>
+	<div class="form">
+	<div class="form-heading"> Student Survey </div>
+		<form id="form">
+				<label for="name"><span> Full Name <span class="required"> * </span></span>
+				<input type="text" class="input-field" name="Name" id="name" required>
+				</label>
+			
+				<label for="birthday"><span> Date of Birth <span class="required"> * </span></span>
+				<input type="date"  class="input-field" name="DateofBirth" id="birthday" required>
+				</label>
+				
+				<label for="gender"><span> Gender <span class="required"> * </span></span>
+				<select name="Gender" class="select-field" required>
+				<option disabled selected value> -- select an option -- </option>
+				<option value="Male"> Male </option>
+				<option value="Female"> Female </option>
+				<option value="Other"> Other </option>
+				</select>
+				</label>
+				
+				<label for="hometown"><span> Hometown <span class="required"> * </span></span>
+				<input type="text" class="input-field" name="Hometown" id="hometown" placeholder="City, State" required>
+				</label>
+				
+				<label for="school"><span> School <span class="required"> * </span></span>
+				<input type="text" class="input-field" name="School" id="school" value="Caldwell University" required>
+				</label>
+				
+				<label for="major"><span> Major <span class="required"> * </span></span>
+				<select name="Major" id="major"  class="select-field" multiple required>
+					<option label="Accounting" value="Accounting" />
+					<option label="Business Administration" value="Business Administration" />
+					<option label="Computer Science" value="Computer Science" />
+					<option label="Computer Information Systems" value="Computer Information Systems" />
+					<option label="Economics" value="Economics" />
+					<option label="Finance" value="Finance" />
+					<option label="Mathematics" value="Mathematics" />
+					<option label="Statistics" value="Statistics" />
+				</select>
+				</label>
+				
+				<label for="email"><span> Email <span class="required"> * </span></span>
+				<input type="email" class="input-field" name="Email" id="email" required>
+				</label>
+				
+				<!--
+				<label><span> Gender <span class="required"> * </span></span>
+				<div class="gender">
+				<label for="male"> Male </label>
+				<input type="radio" name="Gender" id="male" value="Male" required>
+			
+			
+				<label for="female"> Female </label>
+				<input type="radio" name="Gender" id="female" value="Female" required>
+				</label>
+				</div>
+				-->
+			
+				<label for="goals"><span> Personal Goals </span>
+				<textarea name="PersonalGoals" class="textarea-field" id="goals"></textarea>
+				</label>
+				
+				<label><span> </span><input type="button" value="Submit" onClick="output()" /></label>
+		</form>
+		</div>
+	</body>
+</html>
